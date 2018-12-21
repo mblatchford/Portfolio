@@ -1,13 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class NavBar extends Component {
-    render() {
-        return (
-            <div>
-                
-            </div>
-        );
-    }
-}
+const NavBar = (props) => {
+    return (
+        <div >
+        <ul className="navBar">
+            <li onClick={() => props.navClick("Home")}>Home</li>
+            <li onClick={() => props.navClick("Parity")}>Parity</li>
+            <li onClick={() => props.navClick("Unscramble")}>Unscramble</li>
+            <li onClick={() => props.navClick("AdventchureTyme")}>AdventureTyme</li>
+           
+        </ul>
+    </div>
+    );
+};
 
 export default NavBar;
