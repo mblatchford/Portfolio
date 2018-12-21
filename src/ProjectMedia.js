@@ -7,14 +7,18 @@ const ProjectMedia = (props) => {
     console.log(props.embedVid);
     let projectVideo = "";
     switch(props.embedVid){
-        case "Parity":
+        case "parity":
             console.log("switch parity")
             projectVideo = Parity
             break;
-        case "AdventchureTyme":
+        case "adventchureTyme":
             console.log("switch adventure")
             projectVideo = AdventchureTyme
             break;
+        // case "unscramble":
+        // return a path to a sub component that loads
+        // all of the game live?
+
         default:
             projectVideo= "";
             break;   
