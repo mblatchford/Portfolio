@@ -1,33 +1,35 @@
 import React from 'react';
 import Parity from './assets/parity.mp4';
 import AdventchureTyme from './assets/adventure.mp4';
-
+import Unscramble from './assets/unscramble.mp4';
 
 const ProjectMedia = (props) => {
     console.log(props.embedVid);
     let projectVideo = "";
-    switch(props.embedVid){
-        case "parity":
-            console.log("switch parity")
-            projectVideo = Parity
-            break;
-        case "adventchureTyme":
-            console.log("switch adventure")
-            projectVideo = AdventchureTyme
-            break;
-        // case "unscramble":
-        // return a path to a sub component that loads
-        // all of the game live?
+    const toRender = () => {
+        if(props.embedVid === "home"){
+          return null;
+        }else{ 
+            switch(props.embedVid){
+                case "parity":
+                    console.log("switch parity")
+                    return <video  width='400' src= {Parity} type="video/mp4" autoPlay={true} loop={true}/>          
+                case "adventchureTyme":
+                    console.log("switch adventure")
+                    return  <video  width='400' src= {AdventchureTyme} type="video/mp4" autoPlay={true} loop={true}/>          
+                case "unscramble":
+                    console.log("switch unscramble")
+                    projectVideo = Unscramble
+                    return  <video  width='400' src= {Unscramble} type="video/mp4" autoPlay={true} loop={true}/>          
 
-        default:
-            projectVideo= "";
-            break;   
-    }
-
+                default:
+                    break;  
+            }  
+        }
+}
     return (
-        
-        <video  src= {projectVideo} type="video/mp4" autoPlay={true} loop={true}/>
-        
+        toRender()
+
     );
 };
 
