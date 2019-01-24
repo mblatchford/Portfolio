@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavBar = (props) => {
     return (
-        <div >
-        <ul className="navBar">
+        <div  className="navBar">
+        <ul >
             <li onClick={() => props.navClick("home")}>Home</li>
             <li>|</li>
             <li onClick={() => props.navClick("parity")}>Parity</li>

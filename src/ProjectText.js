@@ -36,11 +36,13 @@ const ProjectText = (props) => {
                 </div> 
             )
         }else{
-        return (   
-            <div className="project-text">
+        return ( 
+            <div className="project-text-container">  
+            <div >
                 <h1 className="project-header">{header}</h1>
-                <p ></p>
+                <p className="project-text">
                     {props.project[navLink].projectText}
+                </p>
                 <ul className="project-links">
                     <li>
                         <a  href={props.project[navLink].repositoryLink}>
@@ -57,6 +59,7 @@ const ProjectText = (props) => {
                     </li> 
                 </ul>
             
+            </div>
             </div>
         )
         }
