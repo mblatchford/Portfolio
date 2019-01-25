@@ -5,11 +5,12 @@ const Links = () => {
   return (
     <div className="links">
       <div> 
-       <Link to="/about">About</Link>
+       <Link to="/About">About</Link>
 
       </div>
       <div>
-        Projects
+      <Link to="/Projects">Projects</Link>
+
       </div>
     </div>
   );

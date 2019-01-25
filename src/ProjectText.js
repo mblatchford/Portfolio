@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 
 
 const ProjectText = (props) => {
-    const navLink = props.desiredLink;
+    const navLink = props.link;
     let header = "";
     switch(navLink){
         case "parity":
@@ -14,8 +14,12 @@ const ProjectText = (props) => {
             header = "AdventchureTyme"
             break;
 
-        case "unscramble":
-            header = "Unscramble"
+        case "scrambleUn":
+            header = "ScrambleUn"
+            break;
+        
+        case "battleTanks":
+            header = "BattleTanks"
             break;
 
         default :
@@ -26,14 +30,7 @@ const ProjectText = (props) => {
     const toRender = () => {
         if(navLink === "home"){
             return(
-                <div className="about_text">
-                    <p> 
-                        {props.project[navLink]}
-                    </p>
-                    <p>
-                        {props.project.home2}
-                    </p>
-                </div> 
+              console.log("home link")
             )
         }else{
         return ( 
@@ -41,20 +38,20 @@ const ProjectText = (props) => {
             <div >
                 <h1 className="project-header">{header}</h1>
                 <p className="project-text">
-                    {props.project[navLink].projectText}
+                    {props.projData.projectText}
                 </p>
                 <ul className="project-links">
                     <li>
-                        <a  href={props.project[navLink].repositoryLink}>
+                        <a  href={props.projData.repositoryLink}>
                             <FontAwesomeIcon icon ="external-link-alt"   />
-                            {props.project[navLink].repositoryPlaceholder}
+                            {props.projData.repositoryPlaceholder}
                         </a>
                     </li>
 
                     <li>
-                        <a   href={props.project[navLink].playProjectLink}>
+                        <a   href={props.projData.playProjectLink}>
                             <FontAwesomeIcon icon ="external-link-alt"   />
-                            {props.project[navLink].playProjectPlaceholder}
+                            {props.projData.playProjectPlaceholder}
                         </a>
                     </li> 
                 </ul>

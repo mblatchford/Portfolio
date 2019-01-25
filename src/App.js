@@ -7,7 +7,10 @@ import { faEnvelope, faFilePdf, faExternalLinkAlt } from '@fortawesome/free-soli
 import Contact from './Contact';
 import Headshot from './Headshot';
 import About from './About';
+import Projects from './Projects';
 import Links from './Links';
+import ProjectText from './ProjectText';
+import ProjectMedia from './ProjectMedia';
 // import ProjectMedia from './ProjectMedia';
 // import ProjectText from './ProjectText';
 
@@ -69,6 +72,8 @@ class App extends Component {
   }
   
   render() {
+    console.log("props.project")
+    console.log(this.state.project.parity)
     return (
       <Router>
         <div >
@@ -86,13 +91,83 @@ class App extends Component {
             }}
           />
           <Route
-            path="/about"
+            path="/About"
             render={props => {
               return (
                 <div className='App'>
                 < Headshot />
                 < Contact />
                 < About />
+                
+              </div>
+              );
+            }}
+          />
+          <Route
+            path="/Projects"
+            render={props => {
+              return (
+                <div className='App'>
+                < Headshot />
+                < Contact />
+                < Projects />
+                
+              </div>
+              );
+            }}
+          />
+          <Route
+            path="/Projects/Parity"
+            // exact
+            render={props => {
+              return (
+                <div className='App'>
+                < Headshot />
+                < Contact />
+                < ProjectText 
+                  link ='parity' 
+                  projData ={this.state.project.parity}
+                />
+                {/* < ProjectMedia link ='parity'/>                   */}
+              </div>
+              );
+            }}
+          />
+          <Route
+            path="/Projects/AdventchureTyme"
+            render={props => {
+              return (
+                <div className='App'>
+                < Headshot />
+                < Contact />
+                < ProjectText link ='adventchureTyme'/>
+                < ProjectMedia link ='adventchureTyme'/>                
+              </div>
+              );
+            }}
+          />
+          <Route
+            path="/Projects/BattleTanks"
+            render={props => {
+              return (
+                <div className='App'>
+                < Headshot />
+                < Contact />
+                < ProjectText link ='battleTanks'/>
+                < ProjectMedia link ='battleTanks'/>                
+              </div>
+              );
+            }}
+          />
+          <Route
+            path="/Projects/ScrambleUn"
+            render={props => {
+              return (
+                <div className='App'>
+                < Headshot />
+                < Contact />
+                < ProjectText link ='scrambleUn'/>
+                < ProjectMedia link ='scrambleUn'/>
                 
               </div>
               );

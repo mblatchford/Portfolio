@@ -2,6 +2,7 @@ import React from 'react';
 import Parity from './assets/parity.mp4';
 import AdventchureTyme from './assets/adventure.mp4';
 import Unscramble from './assets/unscramble.mp4';
+import BattleTanks from './assets/BattleTanks.mp4';
 
 const ProjectMedia = (props) => {
     console.log(props.embedVid);
@@ -17,10 +18,14 @@ const ProjectMedia = (props) => {
                 case "adventchureTyme":
                     console.log("switch adventure")
                     return  <video  width='415' src= {AdventchureTyme} type="video/mp4" autoPlay={true} loop={true}/>          
-                case "unscramble":
-                    console.log("switch unscramble")
+                case "scrambleun":
+                    console.log("switch scrambleun")
                     // projectVideo = Unscramble
                     return  <video  width='415' src= {Unscramble} type="video/mp4" autoPlay={true} loop={true}/>          
+                case "battleTanks":
+                    console.log("switch battleTanks")
+                    // projectVideo = Unscramble
+                    return  <video  width='415' src= {BattleTanks} type="video/mp4" autoPlay={true} loop={true}/>          
 
                 default:
                     break;  
