@@ -1,73 +1,88 @@
-import React from 'react';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ProjectMedia from "./ProjectMedia";
+import BattleTanksLogo from "./BattleTanksLogo";
+import ParityLogo from './ParityLogo';
+import AdventchureTymeLogo from './AdventchureTymeLogo';
+import UnscrambleLogo from './UnscrambleLogo';
 
 const ProjectText = (props) => {
-    const navLink = props.link;
-    let header = "";
-    switch(navLink){
-        case "parity":
-            header = "Parity"
-            break;
+  const navLink = props.link;
+  let header = "";
+  switch (navLink) {
+    case "Parity":
+      header = < ParityLogo />
+      break;
 
-        case "adventchureTyme":
-            header = "AdventchureTyme"
-            break;
+    case "AdventchureTyme":
+      header = < AdventchureTymeLogo />
+      break;
 
-        case "scrambleUn":
-            header = "ScrambleUn"
-            break;
-        
-        case "battleTanks":
-            header = "BattleTanks"
-            break;
+    case "ScrambleUn":
+      header = < UnscrambleLogo />
+      break;
 
-        default :
-            header = ""
-            break;
-    }
+    case "BattleTanks":
+      header = <BattleTanksLogo />;
+      break;
 
-    const toRender = () => {
-        if(navLink === "home"){
-            return(
-              console.log("home link")
-            )
-        }else{
-        return ( 
-            <div className="project-text-container">  
-            <div >
-                <h1 className="project-header">{header}</h1>
-                <p className="project-text">
-                    {props.projData.projectText}
-                </p>
-                <ul className="project-links">
-                    <li>
-                        <a  href={props.projData.repositoryLink}>
-                            <FontAwesomeIcon icon ="external-link-alt"   />
-                            {props.projData.repositoryPlaceholder}
-                        </a>
-                    </li>
+    default:
+      header = "";
+      break;
+  }
 
-                    <li>
-                        <a   href={props.projData.playProjectLink}>
-                            <FontAwesomeIcon icon ="external-link-alt"   />
-                            {props.projData.playProjectPlaceholder}
-                        </a>
-                    </li> 
-                </ul>
-            
-            </div>
-            </div>
-        )
-        }
-        
-    }
+  const toRender = () => {
+    if (props.projData.playProjectLink) {
+      return (
+        <div className="project-text-container">
+          <div className="project-header">{header}</div>
+          <p className="project-text">{props.projData.projectText}</p>
 
-    return (
-        <div>
-        {toRender()}
+          <div className="project-video">
+            <ProjectMedia embedVid={props.link} />
+          </div>
+
+          <ul className="project-links">
+            <li>
+              <a href={props.projData.repositoryLink}>
+                <FontAwesomeIcon icon="external-link-alt" />
+                {props.projData.repositoryPlaceholder}
+              </a>
+            </li>
+
+            <li>
+              <a href={props.projData.playProjectLink}>
+                <FontAwesomeIcon icon="external-link-alt" />
+                {props.projData.playProjectPlaceholder}
+              </a>
+            </li>
+          </ul>
         </div>
-    );
+      );
+    } else {
+      return (
+        <div className="project-text-container">
+          <div className="project-header">{header}</div>
+          <p className="project-text">{props.projData.projectText}</p>
+
+          <div className="project-video">
+            <ProjectMedia embedVid={props.link} />
+          </div>
+
+          <ul className="project-links">
+            <li>
+              <a href={props.projData.repositoryLink}>
+                <FontAwesomeIcon icon="external-link-alt" />
+                {props.projData.repositoryPlaceholder}
+              </a>
+            </li>
+          </ul>
+        </div>
+      );
+    }
+  };
+
+  return <div>{toRender()}</div>;
 };
 
 export default ProjectText;

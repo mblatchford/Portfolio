@@ -1,71 +1,33 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BattleTanksLogo from "./BattleTanksLogo";
+import UnscrambleLogo from "./UnscrambleLogo";
+import AdventchureTymeLogo from "./AdventchureTymeLogo";
+import ParityLogo from "./ParityLogo";
 
 const Projects = () => {
   return (
     <div className="projects">
       <div className="battleTanks-link">
-        <Link to="/Projects/BattleTanks">
-          <div
-            style={{
-              color: "red"
-            }}
-          >
-            Battle
-          </div>
-          <div
-            style={{
-              color: "blue"
-            }}
-          >
-            Tanks
-          </div>
+        <Link to="/BattleTanks">
+          <BattleTanksLogo />
         </Link>
       </div>
       <div className="unscramble-link">
-        <Link to="/Projects/ScrambleUn">
-          <div
-            style={{
-              fontFamily: "Gaegu, cursive"
-            }}
-          >
-            scramble
-          </div>
-          <div
-            style={{
-              fontFamily: "Gaegu, cursive",
-              color: "rgba(0, 191, 255, 0.845)"
-            }}
-          >
-            un
-          </div>
+        <Link to="/ScrambleUn">
+          <UnscrambleLogo />
         </Link>
       </div>
 
       <div className="parity-link">
-        <Link to="/Projects/Parity">
-          <div
-            className="parity-link"
-            style={{
-              // fontFamily: 'Gaegu, cursive',
-              fontFamily: "Press Start 2P, cursive"
-            }}
-            >
-            Parity
-          </div>
+        <Link to="/Parity/">
+          <ParityLogo />
         </Link>
       </div>
 
       <div className="adventure-link">
-        <Link to="/Projects/AdventchureTyme">
-          <div
-            className="adventure-link"
-            style={{
-              
-            }}
-            >
-            AdventchureTyme
-          </div>
+        <Link to="/AdventchureTyme">
+          <AdventchureTymeLogo />
         </Link>
       </div>
     </div>
