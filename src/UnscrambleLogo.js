@@ -1,8 +1,8 @@
 import React from "react";
 
-const UnscrambleLogo = () => {
+const UnscrambleLogo = (props) => {
   return (
-    <div className="UnscrambleLogo logo" >
+    <div className={props.class} >
       <div
         style={{
           color: 'dimgrey'

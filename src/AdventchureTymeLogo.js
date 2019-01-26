@@ -1,9 +1,9 @@
 import React from "react";
 
-const AdventchureTymeLogo = () => {
+const AdventchureTymeLogo = (props) => {
   return (
     <div>
-      <div className="AdventchureTymeLogo logo" >
+      <div className={props.class} >
         AdventchureTyme
       </div>
     </div>

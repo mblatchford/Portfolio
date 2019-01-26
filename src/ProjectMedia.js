@@ -12,7 +12,7 @@ const ProjectMedia = (props) => {
         return (
           <video
             className="parity_vid"
-            width="385"
+            width="395"
             src={Parity}
             type="video/mp4"
             autoPlay={true}
@@ -23,7 +23,7 @@ const ProjectMedia = (props) => {
         console.log("switch adventure");
         return (
           <video
-            width="415"
+            width="395"
             src={AdventchureTyme}
             type="video/mp4"
             autoPlay={true}
@@ -34,7 +34,7 @@ const ProjectMedia = (props) => {
         console.log("switch scrambleun");
         return (
           <video
-            width="415"
+            width="395"
             src={Unscramble}
             type="video/mp4"
             autoPlay={true}
@@ -45,7 +45,7 @@ const ProjectMedia = (props) => {
         console.log("switch battleTanks");
         return (
           <video
-            width="415"
+            width="395"
             src={BattleTanks}
             type="video/mp4"
             autoPlay={true}

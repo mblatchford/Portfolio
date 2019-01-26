@@ -23,6 +23,24 @@ body {
   justify-content: center;
 }
 
+a:link {
+  text-decoration: none;
+  color: rgb(21, 89, 148);
+}
+
+a:visited {
+  text-decoration: none;
+  color: rgb(21, 89, 148);
+
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
 /* ********* on every page ********** */
 
 .App {
@@ -38,7 +56,8 @@ body {
   grid-row-start: 1;
   grid-row-end: 3;
   border-radius: 5px;
-  border: 5px solid white;
+  border: 5px solid rgba(0, 0, 0, 0);
+  outline: 1px solid white;
   max-width: 200%;
 }
 
@@ -46,6 +65,8 @@ body {
   grid-column-start: 1;
   grid-column-end: 3;
   max-width: 100%;
+  border-radius: 5px;
+
 }
 
 .contact {
@@ -54,7 +75,7 @@ body {
   grid-row-start: 1;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: repeat(3, 66px);
+  grid-template-columns: 66px 68px 66px;
   grid-template-rows: repeat(3, 66px);
 }
 
@@ -68,6 +89,7 @@ body {
   align-items: center;
   /* padding-bottom: 10px; */
   height: 100%;
+  outline: 1px solid white;
 }
 
 .linkedin {
@@ -79,6 +101,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100%;
+  outline: 1px solid white;
 }
 
 .github {
@@ -90,33 +113,9 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 1.0em;
+  outline: 1px solid white;
 }
 
-.goHome {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  align-items: center;
-  max-height: 100px;
-  font-size: .9em;
-  color: white;
-}
-
-.goBack {
-  display: flex;
-  flex-direction: column;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
-  align-items: center;
-  max-height: 100px;
-  font-size: .9em;
-
-}
 
 .contact-icons {
   font-size: 2.8em;
@@ -124,10 +123,8 @@ body {
 }
 
 .contact-icons:hover {
-  background-color: white;
-  font-size: 2.8em;
-  color: rgb(8, 68, 121);
-  background-color: rgb(21, 89, 148);
+  font-size: 3.8em;
+  /* color: rgb(8, 68, 121); */
 }
 
 /******** Homepage links: About and Projects ********/
@@ -140,8 +137,9 @@ body {
   grid-row-end: 4;
    justify-content: space-around;
   align-items: center; 
-  font-size: 2em;
-
+  font-size: 1.8em;
+  outline: 1px solid white;
+  margin-bottom: -2px;
 }
 
 .about-link, .projects-link{
@@ -154,6 +152,14 @@ body {
   border-radius: 5px;
 }
 
+.about-link:hover {
+  background-color: #688299 ;
+  border-radius: 5px;
+}
+.projects-link:hover {
+  background-color: #688299 ;
+  border-radius: 5px;
+}
 
 .about {
   display: flex;
@@ -162,8 +168,8 @@ body {
   grid-column-end: 5;
   grid-row-start: 3;
   padding-left: 5px;
-  padding-right: 5px;
-  
+  padding-right: 3px;
+  outline: 1px solid white;
 }
 .about a{
   color: black;
@@ -176,22 +182,19 @@ body {
 
 .about p:nth-of-type(2) {
   margin-top: 8px;
-  margin-bottom: 0;
+  padding-bottom: 10px;
 }
 
 .projects {
   display: grid;
-  /* flex-wrap: wrap;
-  justify-content: space-around;
-  align-self: center; */
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 3;
   font-size: 2em;
   grid-template-columns: repeat(2, 100px);
-  grid-template-rows: repeat(2, 70px);
-  padding-top: 3px;
-  
+  grid-template-rows: repeat(2, 80px);
+  outline: 1px solid white;
+  padding-top: 7px;
 }
 
 .battleTanks-link {
@@ -212,30 +215,25 @@ body {
 
 .parity-link {
   justify-self: center;
-  align-self: center;
+  align-self: top;
   grid-column-start: 3;
   grid-column-end: 5;
   grid-row-start: 2;
-  /* padding-left: 5px;
-  padding-right: 5px; */
 }
 
 .adventure-link {
   justify-self: center;
-  align-self: center;
+  align-self: top;
   grid-column-start: 1;
   grid-column-end: 3;
   grid-row-start: 2;
-  /* padding-left: 5px;
-  padding-right: 5px; */
   font-size: 0.8em;
 }
 
 .project-text-container {
-  padding-top: 10px;
   display: grid;
   grid-template-columns: repeat(4, 100px);
-  grid-template-rows: 50px 150px 350px 50px;
+  grid-template-rows: 50px 143px 25px 350px;
 }
 
 .project-header {
@@ -243,46 +241,51 @@ body {
   align-self: center;
   grid-column-start: 1;
   grid-column-end: 5;
+  
 }
 
 .project-text {
-  margin-top: 0;
+  margin: 0;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 2;
   overflow: auto;
-  
+  padding:4px;
+  outline: 1px solid white;
+  text-align: center
 }
 
 .project-video {
+  padding-top: 15px;
   justify-self: center;
-  align-self: center;
-  grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
-}
-
-.project-links {
-  margin: 0;
   grid-column-start: 1;
   grid-column-end: 5;
   grid-row-start: 4;
 }
 
-.project-links li {
-  list-style: none;
-  font-size: 1.1em;
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding-top:10px;
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
 }
 
 .project-links a {
   text-decoration: none;
   color: white;
+  padding:2px 8px;
+  border-radius: 5px;
+
 }
 
 .project-links a:hover {
-  text-decoration: none;
   color: rgb(51, 122, 183);
+  text-decoration: none;
   background-color: white;
+  padding:2px 8px;
   border-radius: 5px;
 }
 
@@ -291,52 +294,46 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 195px;
+  width: 190px;
   height: 65px;
+  border-radius: 5px;
+}
+.projPageLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 195px;
+  height: 35px;
   border-radius: 5px;
 }
 
 .BattleTanksLogo {
   font-family: "Contrail One", cursive;
+  font-size: 25px;
+
 }
 
 .UnscrambleLogo {
   font-family: "Gaegu", cursive;
+  font-size: 30px;
+
 }
 
 .ParityLogo {
   font-family: "Press Start 2P", cursive;
-  font-size: 0.6em;
+  font-size: 15px;
   color: black;
 }
 
 .AdventchureTymeLogo {
-  font-size: 0.8em;
+  font-size: 22px;
   color: black;
 }
 
 .logo:hover {
   background-color: #688299 ;
-  /* border: outset 5px rgba(104, 130, 153, .8); */
-  /* border: outset 5px #688299; */
   border-radius: 5px;
 }
 
-a:link {
-  text-decoration: none;
-  color: rgb(21, 89, 148);
-}
 
-a:visited {
-  text-decoration: none;
-  color: rgb(21, 89, 148);
-
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:active {
-  text-decoration: none;
-}

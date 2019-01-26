@@ -25,29 +25,6 @@ const Contact = () => {
         </a>
       </div>
 
-      {/* <div className="resume">
-        <a href="./home">
-          <FontAwesomeIcon icon="home" className="contact-icons" />
-        </a>
-        Home
-
-      </div> */}
-      
-        {/* <Link to="/">
-        <div className="goHome">
-          <FontAwesomeIcon icon="home" className="contact-icons" />
-            Home
-        </div>
-        </Link>
-
-      <div className="goBack">
-          <FontAwesomeIcon icon="caret-square-left" className="contact-icons" 
-          onClick={()=> {window.history.back()}}/>
-        Back
-      </div> */}
-
-      <Links />
-
       <div className="github">
         <a href="https://github.com/mblatchford">
           <FontAwesomeIcon
@@ -56,6 +33,9 @@ const Contact = () => {
           />
         </a>
       </div>
+     
+      <Links />
+   
     </div>
   );
 };

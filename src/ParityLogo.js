@@ -1,9 +1,9 @@
 import React from "react";
 
-const ParityLogo = () => {
+const ParityLogo = (props) => {
   return (
     <div>
-      <div className="ParityLogo logo">
+      <div className={props.class}>
         Parity
       </div>
     </div>

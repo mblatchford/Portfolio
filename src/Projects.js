@@ -10,24 +10,24 @@ const Projects = () => {
     <div className="projects">
       <div className="battleTanks-link">
         <Link to="/BattleTanks">
-          <BattleTanksLogo />
+          <BattleTanksLogo class='BattleTanksLogo logo'/>
         </Link>
       </div>
       <div className="unscramble-link">
         <Link to="/ScrambleUn">
-          <UnscrambleLogo />
+          <UnscrambleLogo class='UnscrambleLogo logo'/>
         </Link>
       </div>
 
       <div className="parity-link">
         <Link to="/Parity/">
-          <ParityLogo />
+          <ParityLogo  class='ParityLogo logo'/>
         </Link>
       </div>
 
       <div className="adventure-link">
         <Link to="/AdventchureTyme">
-          <AdventchureTymeLogo />
+          <AdventchureTymeLogo class='AdventchureTymeLogo logo'/>
         </Link>
       </div>
     </div>

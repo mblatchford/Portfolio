@@ -74,19 +74,6 @@ class App extends Component {
     return (
     <Router >
         <div>
-          {/* <Route
-            path="/"
-            exact
-            render={(props) => {
-              return (
-                <div className="App">
-                  <Headshot />
-                  <Contact />
-                  <Links />
-                </div>
-              );
-            }}
-          /> */}
           <Route
             path="/"
             exact

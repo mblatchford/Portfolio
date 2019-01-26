@@ -1,8 +1,8 @@
 import React from "react";
 
-const BattleTanksLogo = () => {
+const BattleTanksLogo = (props) => {
   return (
-    <div className="BattleTanksLogo logo">
+    <div className={props.class}>
       <div
         style={{
           color: "red"

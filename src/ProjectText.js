@@ -11,19 +11,19 @@ const ProjectText = (props) => {
   let header = "";
   switch (navLink) {
     case "Parity":
-      header = < ParityLogo />
+      header = < ParityLogo class='ParityLogo projPageLogo' />
       break;
 
     case "AdventchureTyme":
-      header = < AdventchureTymeLogo />
+      header = < AdventchureTymeLogo class='AdventchureTymeLogo projPageLogo'/>
       break;
 
     case "ScrambleUn":
-      header = < UnscrambleLogo />
+      header = < UnscrambleLogo class='UnscrambleLogo projPageLogo'/>
       break;
 
     case "BattleTanks":
-      header = <BattleTanksLogo />;
+      header = <BattleTanksLogo class='BattleTanksLogo projPageLogo'/>
       break;
 
     default:
@@ -38,25 +38,25 @@ const ProjectText = (props) => {
           <div className="project-header">{header}</div>
           <p className="project-text">{props.projData.projectText}</p>
 
-          <div className="project-video">
-            <ProjectMedia embedVid={props.link} />
-          </div>
-
-          <ul className="project-links">
-            <li>
+          <div className="project-links">
+            <div>
               <a href={props.projData.repositoryLink}>
                 <FontAwesomeIcon icon="external-link-alt" />
                 {props.projData.repositoryPlaceholder}
               </a>
-            </li>
+            </div>
 
-            <li>
+            <div>
               <a href={props.projData.playProjectLink}>
                 <FontAwesomeIcon icon="external-link-alt" />
                 {props.projData.playProjectPlaceholder}
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+
+          <div className="project-video">
+            <ProjectMedia embedVid={props.link} />
+          </div>
         </div>
       );
     } else {
@@ -65,18 +65,18 @@ const ProjectText = (props) => {
           <div className="project-header">{header}</div>
           <p className="project-text">{props.projData.projectText}</p>
 
-          <div className="project-video">
-            <ProjectMedia embedVid={props.link} />
-          </div>
-
-          <ul className="project-links">
-            <li>
+          <div className="project-links">
+            <div>
               <a href={props.projData.repositoryLink}>
                 <FontAwesomeIcon icon="external-link-alt" />
                 {props.projData.repositoryPlaceholder}
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+
+          <div className="project-video">
+            <ProjectMedia embedVid={props.link} />
+          </div>
         </div>
       );
     }
