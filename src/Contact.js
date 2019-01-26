@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {Link} from "react-router-dom";
+import Links from './Links';
 
 const Contact = () => {
   // let divStyle = {
@@ -32,7 +33,7 @@ const Contact = () => {
 
       </div> */}
       
-        <Link to="/">
+        {/* <Link to="/">
         <div className="goHome">
           <FontAwesomeIcon icon="home" className="contact-icons" />
             Home
@@ -43,7 +44,9 @@ const Contact = () => {
           <FontAwesomeIcon icon="caret-square-left" className="contact-icons" 
           onClick={()=> {window.history.back()}}/>
         Back
-      </div>
+      </div> */}
+
+      <Links />
 
       <div className="github">
         <a href="https://github.com/mblatchford">

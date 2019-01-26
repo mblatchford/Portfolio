@@ -16,13 +16,8 @@ import About from "./About";
 import Projects from "./Projects";
 import Links from "./Links";
 import ProjectText from "./ProjectText";
-import createBrowserHistory from "history/createBrowserHistory";
 
 library.add(fab, faEnvelope, faFilePdf, faExternalLinkAlt, faHome, faCaretSquareLeft);
-
-
-const customHistory = createBrowserHistory();
-
 
 
 class App extends Component {
@@ -77,9 +72,9 @@ class App extends Component {
 
   render() {
     return (
-    <Router history={customHistory} >
+    <Router >
         <div>
-          <Route
+          {/* <Route
             path="/"
             exact
             render={(props) => {
@@ -91,9 +86,10 @@ class App extends Component {
                 </div>
               );
             }}
-          />
+          /> */}
           <Route
-            path="/About"
+            path="/"
+            exact
             render={(props) => {
               return (
                 <div className="App">
@@ -106,6 +102,7 @@ class App extends Component {
           />
           <Route
             path="/Projects"
+            
             render={(props) => {
               return (
                 <div className="App">

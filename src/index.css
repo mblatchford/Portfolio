@@ -54,24 +54,25 @@ body {
   grid-row-start: 1;
   grid-row-end: 3;
   display: grid;
-  grid-template-columns: repeat(2, 100px);
+  grid-template-columns: repeat(3, 66px);
   grid-template-rows: repeat(3, 66px);
 }
 
 .envelope {
   display: flex;
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
   justify-content: center;
   align-items: center;
+  /* padding-bottom: 10px; */
   height: 100%;
 }
 
 .linkedin {
   display: flex;
-  grid-column-start: 2;
+  grid-column-start: 3;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
@@ -132,14 +133,15 @@ body {
 /******** Homepage links: About and Projects ********/
 .links {
   display: flex;
+  flex-direction: column;
   grid-column-start: 1;
-  grid-column-end: 5;
-  grid-row-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
   grid-row-end: 4;
-  justify-content: space-between;
-  align-self: center;
+   justify-content: space-around;
+  align-items: center; 
   font-size: 2em;
-  
+
 }
 
 .about-link, .projects-link{
@@ -147,8 +149,8 @@ body {
   justify-content: center;
   align-items: center;
   background-color: white;
-  width: 195px;
-  height: 65px;
+  width: 170px;
+  height: 45px;
   border-radius: 5px;
 }
 
@@ -161,6 +163,10 @@ body {
   grid-row-start: 3;
   padding-left: 5px;
   padding-right: 5px;
+  
+}
+.about a{
+  color: black;
 }
 
 .about p:nth-of-type(1) {
@@ -318,10 +324,13 @@ body {
 
 a:link {
   text-decoration: none;
+  color: rgb(21, 89, 148);
 }
 
 a:visited {
   text-decoration: none;
+  color: rgb(21, 89, 148);
+
 }
 
 a:hover {
