@@ -14,7 +14,6 @@ import Contact from "./Contact";
 import Headshot from "./Headshot";
 import About from "./About";
 import Projects from "./Projects";
-import Links from "./Links";
 import ProjectText from "./ProjectText";
 
 library.add(fab, faEnvelope, faFilePdf, faExternalLinkAlt, faHome, faCaretSquareLeft);
@@ -58,7 +57,7 @@ class App extends Component {
         battleTanks: {
           projectHeader: "BattleTanks",
           projectText:
-            "The Digital Crafts capstone assignment allotted the most time of any project clocking in at two-weeks of development. Throughout the course I found it constructive to start with a simple game or puzzle mechanic and build it out in code. BattleTanks is another such instance. Riffing off the classic Battleship, BattleTanks is part and parcel the same experience. Diving deeper into React, I worked with a partner to bring the game about. After working with a couple of trio's and flying solo on Unscramble - a duo was a new experience. It turned out we worked well in a pair-programming format and completed the majority of the project in this way. We went outside Digital Crafts curriculum to learn about WebSockets with which we incorporated our live chat functionality. Additionally, our backend is simply a WebSocket server using a FIFO method of matching players into games. We feel despite some appearance issues, (not responsive or mobile ready, some visual artifacts during play, etc), we did what we set out to do with just the two weeks available. Had we more time, we could have given some additional polish and maybe an AI bot to play against instead of just other people. All in all it was a successful project and an enjoyable challenge. Play live at the link below, (requires two people for gameplay)",
+            "The Digital Crafts capstone assignment allotted the most time of any project clocking in at two-weeks of development. Throughout the course I found it constructive to start with a simple game or puzzle mechanic and build it out in code. BattleTanks is another such instance. Riffing off the classic Battleship, BattleTanks is part and parcel the same experience. Diving deeper into React, I worked with a partner to bring the game about. After working with a couple of trio's and flying solo on Unscramble - a duo was a new experience. It turned out we worked well in a pair-programming format and completed the majority of the project in this way. We went outside Digital Crafts curriculum to learn about WebSockets with which we incorporated our live chat functionality. Additionally, our backend is simply a WebSocket server using a FIFO method of matching players into games. We feel despite some appearance issues, (not responsive or mobile ready, some visual artifacts during play, etc), we did what we set out to do with just the two weeks available. Had we more time, we could have given some additional polish and maybe an AI bot to play against instead of just other people. All in all it was a successful project and an enjoyable challenge. Play live at the link below, (requires two people for gameplay).",
           repositoryLink: "https://github.com/mblatchford/BattleTanks",
           repositoryPlaceholder: " BattleTanks Respository",
           playProjectLink: "./BattleTanks.online",

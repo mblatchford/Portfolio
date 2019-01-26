@@ -34,7 +34,7 @@ const ProjectText = (props) => {
   const toRender = () => {
     if (props.projData.playProjectLink) {
       return (
-        <div className="project-text-container">
+        <div className='project-text-container'>
           <div className="project-header">{header}</div>
           <p className="project-text">{props.projData.projectText}</p>
 
@@ -61,7 +61,7 @@ const ProjectText = (props) => {
       );
     } else {
       return (
-        <div className="project-text-container">
+        <div className='project-text-container'>
           <div className="project-header">{header}</div>
           <p className="project-text">{props.projData.projectText}</p>
 
@@ -82,7 +82,7 @@ const ProjectText = (props) => {
     }
   };
 
-  return <div>{toRender()}</div>;
+  return <div className="project-text-wrapper">{toRender()}</div>;
 };
 
 export default ProjectText;
