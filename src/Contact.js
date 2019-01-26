@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Link} from "react-router-dom";
 
 const Contact = () => {
   // let divStyle = {
@@ -23,12 +24,25 @@ const Contact = () => {
         </a>
       </div>
 
-      <div className="resume">
+      {/* <div className="resume">
         <a href="./home">
           <FontAwesomeIcon icon="home" className="contact-icons" />
         </a>
         Home
 
+      </div> */}
+      
+        <Link to="/">
+        <div className="goHome">
+          <FontAwesomeIcon icon="home" className="contact-icons" />
+            Home
+        </div>
+        </Link>
+
+      <div className="goBack">
+          <FontAwesomeIcon icon="caret-square-left" className="contact-icons" 
+          onClick={()=> {window.history.back()}}/>
+        Back
       </div>
 
       <div className="github">

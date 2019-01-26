@@ -16,8 +16,14 @@ import About from "./About";
 import Projects from "./Projects";
 import Links from "./Links";
 import ProjectText from "./ProjectText";
+import createBrowserHistory from "history/createBrowserHistory";
 
 library.add(fab, faEnvelope, faFilePdf, faExternalLinkAlt, faHome, faCaretSquareLeft);
+
+
+const customHistory = createBrowserHistory();
+
+
 
 class App extends Component {
   constructor(props) {
@@ -67,16 +73,11 @@ class App extends Component {
     };
   }
 
-  _handleNavClick = (desiredLink) => {
-    // console.log("nav click")
-    this.setState({
-      navLink: desiredLink
-    });
-  };
+
 
   render() {
     return (
-      <Router>
+    <Router history={customHistory} >
         <div>
           <Route
             path="/"
