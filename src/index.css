@@ -171,6 +171,8 @@ a:active {
   height: 295px;
   text-align: justify;
   text-indent: 25px;
+  padding:15px;
+
 }
 .about a{
   color: black;
@@ -263,7 +265,7 @@ a:active {
   grid-column-end: 5;
   grid-row-start: 2;
   overflow: auto;
-  padding:4px;
+  padding:15px;
   outline: 1px solid white;
   text-indent: 25px;
   text-align: justify;
@@ -401,7 +403,7 @@ video{
     grid-row-start: 4;
     height:200px;
     overflow: scroll;
-    padding:4px;
+    padding:15px;
     outline: 1px solid white;
     text-indent: 25px;
     text-align: justify;

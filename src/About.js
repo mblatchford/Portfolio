@@ -8,7 +8,7 @@ const About = () => {
         the world wide web has to offer. Having retired from the sport of track
         cycling as an Olympian, I took the skills I honed for more than a decade
         of competition into academics. Graduating with a B.S. in Computer
-        Science was a great foundation, but wanted more.
+        Science was a great foundation, but I wanted more.
       </p>
       <p>
         Entering into Digital Crafts' immersive full-stack development program
