@@ -50,7 +50,7 @@ class App extends Component {
             "This 3-day project was a dive into React.js. Built as a clone of a basic unscramble puzzle, this app gave me a better foundation into how React works and why it's powerful. A front-end project only, there are no database dependencies rather I polled Unsplash for a random image restricted to 800x600 dimensions. There were some interesting hurdles when it came to defining the math and css sprites required to correctly show each portion of the background on a given tile but I worked them out. A CSS alchemist I'm not, postitioning the elements is still difficult and as such is not a responsive site",
           repositoryLink: "https://github.com/mblatchford/Unscramble",
           repositoryPlaceholder: " Unscramble Respository",
-          playProjectLink: "./needtoaddlink",
+          playProjectLink: "http://unscramble.mblatchford.com",
           playProjectPlaceholder: " Play Unscramble"
         },
 
