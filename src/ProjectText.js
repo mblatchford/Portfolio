@@ -40,14 +40,14 @@ const ProjectText = (props) => {
 
           <div className="project-links">
             <div>
-              <a href={props.projData.repositoryLink}>
+              <a href={props.projData.repositoryLink} target="_blank">
                 <FontAwesomeIcon icon="external-link-alt" />
                 {props.projData.repositoryPlaceholder}
               </a>
             </div>
 
             <div>
-              <a href={props.projData.playProjectLink}>
+              <a href={props.projData.playProjectLink} target="_blank">
                 <FontAwesomeIcon icon="external-link-alt" />
                 {props.projData.playProjectPlaceholder}
               </a>
@@ -67,7 +67,7 @@ const ProjectText = (props) => {
 
           <div className="project-links">
             <div>
-              <a href={props.projData.repositoryLink}>
+              <a href={props.projData.repositoryLink} target="_blank">
                 <FontAwesomeIcon icon="external-link-alt" />
                 {props.projData.repositoryPlaceholder}
               </a>
