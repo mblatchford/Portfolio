@@ -2,10 +2,10 @@ import React from "react";
 
 const UnscrambleLogo = (props) => {
   return (
-    <div className={props.class} >
+    <div className={props.class}>
       <div
         style={{
-          color: 'dimgrey'
+          color: "dimgrey"
         }}
       >
         scramble

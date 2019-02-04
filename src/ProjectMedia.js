@@ -10,12 +10,7 @@ const ProjectMedia = (props) => {
       case "Parity":
         console.log("switch parity");
         return (
-          <video
-            src={Parity}
-            type="video/mp4"
-            autoPlay={true}
-            loop={true}
-          />
+          <video src={Parity} type="video/mp4" autoPlay={true} loop={true} />
         );
       case "AdventchureTyme":
         console.log("switch adventure");

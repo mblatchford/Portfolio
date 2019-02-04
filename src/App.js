@@ -16,8 +16,14 @@ import About from "./About";
 import Projects from "./Projects";
 import ProjectText from "./ProjectText";
 
-library.add(fab, faEnvelope, faFilePdf, faExternalLinkAlt, faHome, faCaretSquareLeft);
-
+library.add(
+  fab,
+  faEnvelope,
+  faFilePdf,
+  faExternalLinkAlt,
+  faHome,
+  faCaretSquareLeft
+);
 
 class App extends Component {
   constructor(props) {
@@ -67,11 +73,9 @@ class App extends Component {
     };
   }
 
-
-
   render() {
     return (
-    <Router >
+      <Router>
         <div>
           <Route
             path="/"
@@ -88,7 +92,6 @@ class App extends Component {
           />
           <Route
             path="/Projects"
-            
             render={(props) => {
               return (
                 <div className="App">
