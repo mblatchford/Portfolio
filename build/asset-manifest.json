@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.fcad25cc.chunk.css",
-  "main.js": "/static/js/main.a5fd1109.chunk.js",
-  "main.js.map": "/static/js/main.a5fd1109.chunk.js.map",
+  "main.css": "/static/css/main.55de1338.chunk.css",
+  "main.js": "/static/js/main.5acce912.chunk.js",
+  "main.js.map": "/static/js/main.5acce912.chunk.js.map",
   "static/js/1.09e352d4.chunk.js": "/static/js/1.09e352d4.chunk.js",
   "static/js/1.09e352d4.chunk.js.map": "/static/js/1.09e352d4.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -11,8 +11,8 @@
   "static/media/unscramble.mp4": "/static/media/unscramble.978f01d2.mp4",
   "static/media/BattleTanks.mp4": "/static/media/BattleTanks.f8148788.mp4",
   "static/media/parity.mp4": "/static/media/parity.cd48f9f2.mp4",
-  "static/css/main.fcad25cc.chunk.css.map": "/static/css/main.fcad25cc.chunk.css.map",
+  "static/css/main.55de1338.chunk.css.map": "/static/css/main.55de1338.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.7e6df56e0d51dd46ff3994c7b8ef9570.js": "/precache-manifest.7e6df56e0d51dd46ff3994c7b8ef9570.js",
+  "precache-manifest.528985741de373c46472229c039d8a5b.js": "/precache-manifest.528985741de373c46472229c039d8a5b.js",
   "service-worker.js": "/service-worker.js"
 }
